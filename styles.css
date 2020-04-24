@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 32px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 20px;
+    padding: 20px 0 15px 0;
+    border-bottom: 3px solid lightgray;
+}
+section:last-child {
+    border-bottom: none;
+}
+.sectionTitle {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+section img {
+    width: 130px;
+    border-radius: 100px;
+    position:relative;
+    top:35%;
+    left:45%;
+    margin-top:-50px;
+    margin-left:-50px;
+}
+/* identification */
+.identification {
+    text-align: center;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkItem {
+    margin: 8px;
+}
+.linkItem i {
+    margin: 5px;
+}
+.linkItem a {
+    color: #232323;
+    text-decoration: none;
+}
+.profile {
+    text-align: justify;
+    margin-top: 10px;
+}
+.myName {
+    font-size: 30px;
+    line-height: 1;
+    margin: 10px;
+}
+.myTitle {
+    font-size: 15px;
+    font-weight: 500;
+}
+.skillItem i {
+    margin-right: 5px;
+}
+.jobContainer {
+    border-bottom: 1px solid lightgray;
+    margin: 0 0 20px 0;
+}
+.jobContainer:last-child {
+    border-bottom: none;
+}
+.jobCompany {
+    font-weight: bold;
+}
+.jobTitle, .jobPeriod {
+    font-style: italic;
+}
+.jobPeriod {
+    margin-bottom: 10px;
+}
+.jobDescription {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.portfolioContainer {
+    border-bottom: 1px solid lightgray;
+    margin: 0 0 20px 0;
+}
+.portfolioContainer:last-child {
+    border-bottom: none;
+}
+.portfolioTitle {
+    font-weight: bold;
+}
+.portfolioLink {
+    margin-bottom: 10px;
+}
+.portfolio a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+/*.jobPortfolio {
+    border-bottom: 1px solid lightgray;
+    margin: 0 0 20px 0;
+}
+.jobPortfolio:last-child {
+    border-bottom: none;
+}
+.portfolioLink {
+    border-bottom: 1px solid lightgray;
+    margin: 20px 0 20px 0;
+}
+.portfolioLink:last-child {
+    border-bottom: none;
+}*/
+
+
+
+@media only screen and (max-width: 600px) {
+    section {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    section img {
+        position:relative;
+        top:50%;
+        left:45%;
+        margin-top:-50px;
+        margin-left:-50px;
+    }
+    .myName {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 5px;
+    }
+    .myTitle {
+        font-size: 13px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .links {
+        display: block;
+    }
+    .linkItem {
+        margin: -2px;
+    }
+    .linkItem a{
+        font-size: 12px;
+    }
+    .profile {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+
+
+
+}
